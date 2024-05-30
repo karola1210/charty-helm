@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zgody-nfz2
+  name: zgody-nfz3
   annotations:
     deployment.kubernetes.io/revision: '62'
     field.cattle.io/publicEndpoints: >-
@@ -154,8 +154,8 @@ spec:
               value: /run/secrets/password-dt/password-dt
             - name: CLC_ZG_RI_KaasDtCertificatePath
               value: /run/secrets/cert-dt/cert-dt.p12
-          image: ksnfz.azurecr.io/clc_zg_ri:logowanie
-          imagePullPolicy: Always
+          image: {{ .Values.image.repository }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           name: container-0
           ports:
             - containerPort: 80
