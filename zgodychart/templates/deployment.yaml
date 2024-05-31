@@ -65,95 +65,10 @@ spec:
     spec:
       containers:
         - env:
-            - name: CLC_ZG_RI_KaasEndpointSwiadczeniodawcy
-              value: https://nfz2.kamsoft.pl/kaas-sds/services/ServiceBrokerAnonymous
-            - name: CLC_ZG_RI_KaasEndpointPracownicy
-              value: https://nfz2.kamsoft.pl/kaas/services/ServiceBrokerAnonymous
-            - name: CLC_ZG_RI_KaasDtRedirectAddress
-              value: https://nfz2.kamsoft.pl
-            - name: CLC_ZG_RI_KaasDtSoapAddress
-              value: http://10.14.43.20:8280/services/KAASIdpProxy
-            - name: CLC_ZG_RI_KaasDtIssuer
-              value: CLC_ZG_S
-            - name: CLC_ZG_RI_EpuapEndpointAddress
-              value: http://10.10.9.24:8290/services/PZ5Service
-            - name: CLC_ZG_RI_EpuapDisabled
-              value: 'N'
-            - name: CLC_ZG_RI_Db2aasEndpointAddress
-              value: https://10.12.0.37:8443/CLCWDBrokerDB2TESTCBWIDT
-            - name: CLC_ZG_RI_Db2aasConnectionString
-              value: pIZ2fxkHMWr+ETg3In5+s8xL8jRnWFThuVxKRZFZKszRmgVYTAtZoAup4vr+osBL
-            - name: CLC_ZG_RI_CertAddress
-              value: http://localhost:8080/jdss-servlet-1.0
-            - name: CLC_ZG_RI_PdfGeneratorAddress
-              value: http://localhost:8080/jprintgenerator-servlet-1.0
-            - name: CLC_ZG_RI_TestSigning
-              value: T
-            - name: CLC_ZG_RI_WDRepoAddress
-              value: https://10.12.0.45:8443/CLCWDRepoWebTest/services/CLCRepoServiceForApp
-            - name: CLC_ZG_RI_TrybDlaPracownikow
-              value: 'false'
-            - name: CLC_ZG_RI_CbwidSchema
-              value: testcbwid
-            - name: CLC_ZG_RI_ViewsSchema
-              value: testviews
-            - name: CLC_ZG_RI_SimpSchema
-              value: tksimp
-            - name: CLC_ZG_RI_CbwidCacheSchema
-              value: testcbwid
-            - name: CLC_ZG_RI_InterfaceType
-              value: RI_CBWID
-            - name: CLC_ZG_RI_InterfaceVersion
-              value: '1.0'
-            - name: CLC_ZG_RI_FrontEndAddress
-              value: https://zgody.localhost
-            - name: CLC_ZG_RI_KaasDisabled
-              value: 'N'
-            - name: CLC_ZG_RI_CertDisabled
-              value: 'N'
-            - name: CLC_ZG_RI_WorkPermission
-            - name: CLC_ZG_RI_WorkPermissionSwdRI
-              value: CLC_ZG|CLC_CBWID_SWD|RI
-            - name: CLC_ZG_RI_WorkPermissionSwdRDTL
-              value: CLC_ZG|CLC_CBWID_SWD|RDTL
-            - name: CLC_ZG_RI_WorkPermissionRI
-              value: CLC_ZG|CLC_CBWID|RI
-            - name: CLC_ZG_RI_WorkPermissionRDTL
-              value: CLC_ZG|CLC_CBWID|RDTL
-            - name: CLC_ZG_RI_FakeWorkPermission
-              value: CLC_ZG|CLC_CBWID|WORK
-            - name: CLC_ZG_RI_BasePath
-              value: \/
-            - name: CLC_ZG_RI_LogsPath
-              value: /logs/CLC_ZG_RI
-            - name: CLC_ZG_RI_AntiforgeryCookiePath
-              value: /
-            - name: CLC_ZG_RI_FakeModeLoginAddress
-              value: https://gllxd2.kamsoft.local/cbwid-tryb-podgladu-swd
-            - name: CLC_ZG_RI_FakeModeEnabled
-              value: 'N'
-            - name: CLC_ZG_RI_OwPracownikaTest
-              value: '08'
-            - name: CLC_ZG_RI_KaasEndpointOprPracownicy
-              value: http://10.14.43.20:8280/services/OprProxy
-            - name: CLC_ZG_RI_ServerCertPath
-              value: /run/secrets/signing_cert
-            - name: CLC_ZG_RI_ServerCertKeyPath
-              value: /run/secrets/cert_pass
-            - name: CLC_ZG_RI_DocumentationAddress
-              value: http://10.12.0.76:89/
-            - name: CLC_ZG_RI_DocumentationConnectionString
-              value: KS:J098ukjqen.mg34iuoh#U4HIU2T.igf2
-            - name: CLC_ZG_RI_EventServiceAddress
-              value: http://localhost:80/api
-            - name: CLC_ZG_RI_EmailServiceDisabled
-              value: 'N'
-            - name: CLC_ZG_RI_RabbitLogPath
-              value: /rabbit_log
-            - name: CLC_ZG_RI_KaasDtCertificateKeyPath
-              value: /run/secrets/password-dt/password-dt
-            - name: CLC_ZG_RI_KaasDtCertificatePath
-              value: /run/secrets/cert-dt/cert-dt.p12
+          {{- range .Values.env }}
+          - name: {{ .name }}
+            value: {{ .value | quote }}
+          {{- end }}
           image: {{ .Values.image.repository }}
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           name: container-0
@@ -368,10 +283,10 @@ spec:
 #          workingDir: string
       dnsPolicy: ClusterFirst
       imagePullSecrets:
-        - name: regcred
+        - name: {{ .Values.imagePullSecrets }}
 #        - name: string
       restartPolicy: Always
-      schedulerName: default-scheduler
+      schedulerName: default-schedulers
       terminationGracePeriodSeconds: 30
       volumes:
         - name: vol-pqv7d
