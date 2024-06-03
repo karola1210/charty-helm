@@ -1,3 +1,14 @@
 apiVersion: v1
-entries: {}
-generated: "2024-06-03T11:57:47.5895599+02:00"
+entries:
+  zgodychart:
+  - apiVersion: v2
+    appVersion: 1.20.0
+    created: "2024-06-03T12:15:39.4467935+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 1e8686bf978e25e35f7a025e8194c6b41d1db83f94bffcc48d049d1b329a1efd
+    name: zgodychart
+    type: application
+    urls:
+    - zgodychart-1.4.0.tgz
+    version: 1.4.0
+generated: "2024-06-03T12:15:39.4457916+02:00"
