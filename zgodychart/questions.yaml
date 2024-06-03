@@ -1,0 +1,16 @@
+questions:
+  - variable: "environmentVariables[0].value"
+    label: "Wartość dla CLC_ZG_RI_KaasEndpointSwiadczeniodawcy"
+    description: "Adres endpoint swiadczeniodawcy"
+    type: "string"
+    required: true
+  - variable: "environmentVariables[1].value"
+    label: "Wartość dla CLC_ZG_RI_KaasEndpointPracownicy"
+    description: "Adres endpoint pracownicy"
+    type: "string"
+    required: true
+  - variable: "environmentVariables[2].value"
+    label: "Wartość dla CLC_ZG_RI_KaasDtRedirectAddress"
+    description: "Wartosc adress kaas dt redirect"
+    type: "string"
+    required: true
