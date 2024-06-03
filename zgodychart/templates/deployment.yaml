@@ -64,7 +64,7 @@ spec:
 #      uid: string
     spec:
       containers:
-          env:
+          - env:
             {{- range .Values.environmentVariables }}
             - name: {{ .name }}
               value: {{ .value }}
