@@ -2,123 +2,13 @@ apiVersion: v1
 entries:
   zgodychart:
   - apiVersion: v2
-    appVersion: 1.30.0
-    created: "2024-06-03T21:20:21.4920964+02:00"
-    description: A Helm chart for Kubernetes
-    digest: ab041da3a2743aca24bdf6010d96d6ef9bab58e2ea1dfa48372ae2a634e6bbc4
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-2.5.0.tgz
-    version: 2.5.0
-  - apiVersion: v2
-    appVersion: 1.30.0
-    created: "2024-06-03T21:20:21.3021289+02:00"
-    description: A Helm chart for Kubernetes
-    digest: b1f3aa1cd3daa1223fd4c306ecd1761dfcb11380e3d88849453d01c40f79f7c3
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-2.4.0.tgz
-    version: 2.4.0
-  - apiVersion: v2
-    appVersion: 1.29.0
-    created: "2024-06-03T21:20:21.146129+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 4f56de854a9b1a108060a2a9697efce603025116698c2547c3e56f2a1223dc3b
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-2.3.0.tgz
-    version: 2.3.0
-  - apiVersion: v2
-    appVersion: 1.28.0
-    created: "2024-06-03T21:20:21.1091298+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 712c5bca178ae2a0565309f3f73d28fb1dd7b9296745dea233a264f1af91f51e
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-2.2.0.tgz
-    version: 2.2.0
-  - apiVersion: v2
     appVersion: 1.27.0
-    created: "2024-06-03T21:20:21.0861293+02:00"
+    created: "2024-06-03T21:27:20.8707998+02:00"
     description: A Helm chart for Kubernetes
-    digest: 5828a90a6952c3bf00d908854abd9001adb0d7be8b3a0736b34d915528a475b6
+    digest: adbe677bdf730d900c589c9c97398b49bb1e800a16504105420067984cbe5cfa
     name: zgodychart
     type: application
     urls:
-    - zgodychart-2.1.0.tgz
-    version: 2.1.0
-  - apiVersion: v2
-    appVersion: 1.26.0
-    created: "2024-06-03T21:20:21.0751326+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 93d2dcd4e2cbadda468a1ce30125c2db8ac7764a88172e5c9bba50c58bf5ef24
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-2.0.0.tgz
-    version: 2.0.0
-  - apiVersion: v2
-    appVersion: 1.25.0
-    created: "2024-06-03T21:20:21.0681333+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 02822130399c075d1e1dd57ac79c217a2dbe6c01db1deba940ce543870fedcae
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.9.0.tgz
-    version: 1.9.0
-  - apiVersion: v2
-    appVersion: 1.24.0
-    created: "2024-06-03T21:20:21.0631339+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 695de5c265d31ac7154b6e3197188d732878f315ec41aff8e7e7f2a290e3de9f
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.8.0.tgz
-    version: 1.8.0
-  - apiVersion: v2
-    appVersion: 1.23.0
-    created: "2024-06-03T21:20:21.0581269+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 8441746aa170db1e265831c7e44af6487e699171e146368d2831a51bcb2b22d0
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.7.0.tgz
-    version: 1.7.0
-  - apiVersion: v2
-    appVersion: 1.22.0
-    created: "2024-06-03T21:20:21.0551275+02:00"
-    description: A Helm chart for Kubernetes
-    digest: a34c3ae852411fbef8fbe64238273dfd4e3fc39e89cd1bdb1707d658a3f491ba
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.6.0.tgz
-    version: 1.6.0
-  - apiVersion: v2
-    appVersion: 1.21.0
-    created: "2024-06-03T21:20:21.0531274+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 803814b151ca6abe8e38935624d31993c37e13b4acef59fff788ff36c7ca7a25
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.5.0.tgz
-    version: 1.5.0
-  - apiVersion: v2
-    appVersion: 1.20.0
-    created: "2024-06-03T21:20:21.0511333+02:00"
-    description: A Helm chart for Kubernetes
-    digest: 1e8686bf978e25e35f7a025e8194c6b41d1db83f94bffcc48d049d1b329a1efd
-    name: zgodychart
-    type: application
-    urls:
-    - zgodychart-1.4.0.tgz
-    version: 1.4.0
-generated: "2024-06-03T21:20:21.0481333+02:00"
+    - zgodychart-2.7.0.tgz
+    version: 2.7.0
+generated: "2024-06-03T21:27:20.8689093+02:00"
