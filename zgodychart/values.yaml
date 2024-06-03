@@ -11,7 +11,7 @@ image:
   imagePullSecrets: regcred
   
   
-env:
+environmentVariables:
   - name: CLC_ZG_RI_KaasEndpointSwiadczeniodawcy
     value: https://nfz2.kamsoft.pl/kaas-sds/services/ServiceBrokerAnonymous
   - name: CLC_ZG_RI_KaasEndpointPracownicy

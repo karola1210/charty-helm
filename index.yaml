@@ -3,7 +3,7 @@ entries:
   zgodychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-30T19:22:33.9302208+02:00"
+    created: "2024-06-03T11:49:44.0321908+02:00"
     description: A Helm chart for Kubernetes
     digest: bbc182df54221d05c43a6a82d045d58eb3465e6e5dd5c34106a840eedfb193b5
     name: zgodychart
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://github.com/karola1210/charty-helm.git/zgodychart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-30T19:22:33.9217341+02:00"
+generated: "2024-06-03T11:49:44.0311905+02:00"
